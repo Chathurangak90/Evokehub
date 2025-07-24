@@ -35,7 +35,7 @@
 - **SQLite** database used for persistence
 
 ## 🚀 How to Run the Application
--Front end 
+## Front end 
 
 - **npm install # Install Angular dependencies**
 
