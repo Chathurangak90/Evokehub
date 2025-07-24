@@ -41,9 +41,6 @@
 
 - **ng serve**
 
-Bcak end 
+## Back end 
 If you change the backend API port number, update the API URL in the Angular environment file:
-
-Path:
-
-book-web/src/environments/environment.ts
+- **Path: book-web/src/environments/environment.ts**
