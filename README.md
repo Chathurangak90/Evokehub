@@ -33,4 +33,13 @@
 ## 🗃️ Database
 
 - **SQLite** database used for persistence
+- 
+## 🚀 How to Run the Application
+-From end 
+npm install       # Install Angular dependencies
+ng serve
 
+Bcak end 
+If you change the backend API port number, update the API URL in the Angular environment file:
+Path:
+book-web/src/environments/environment.ts
