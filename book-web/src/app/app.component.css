@@ -1,0 +1,20 @@
+nav {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}

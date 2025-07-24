@@ -1,0 +1,38 @@
+<div>
+  <!-- Search and sort -->
+  <input type="text" [(ngModel)]="searchTerm" (ngModelChange)="applyFilters()" placeholder="Search by title" />
+
+  <select [(ngModel)]="sortBy" (change)="applyFilters()">
+    <option value="title">Title</option>
+    <option value="price">Price</option>
+    <option value="author">Author</option>
+  </select>
+
+  <!-- Store filter buttons -->
+  <button 
+    (click)="setStoreFilter(null)" 
+    [class.active]="storeFilter === null">All</button>
+
+  <button 
+    (click)="setStoreFilter('Greta')" 
+    [class.active]="storeFilter === 'Greta'">Greta’s bookshop</button>
+
+  <button 
+    (click)="setStoreFilter('Peter')" 
+    [class.active]="storeFilter === 'Peter'">Peter’s bookshop</button>
+
+  <!-- Book list -->
+  <ul>
+    <li *ngFor="let book of filteredBooks">
+      <strong>{{ book.title }}</strong> by {{ book.author }} - ${{ book.price }} ({{ book.store }})
+      <button (click)="onBuy(book)">Buy</button>
+    </li>
+  </ul>
+
+  <!-- Pagination controls -->
+  <div class="pagination">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }}</span>
+    <button (click)="nextPage()">Next</button>
+  </div>
+</div>

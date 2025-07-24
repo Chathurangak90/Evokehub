@@ -1,0 +1,89 @@
+/* Basic container styling */
+div {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Search input */
+input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Dropdown select */
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Filter buttons */
+button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Active filter button */
+button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+/* Book list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Book items */
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+/* Book title */
+li strong {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+/* Buy button */
+li button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-top: 5px;
+}
+
+li button:hover {
+  background-color: #45a049;
+}
+
+/*pagination*/
+
+.pagination {
+  margin-top: 1rem;
+}
+
+.pagination button {
+  margin: 0 0.5rem;
+}
